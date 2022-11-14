@@ -26,7 +26,7 @@ export default function Spotify() {
     const getUserInfo = async () => {
       const { data } = await axios.get("https://api.spotify.com/v1/me", {
         headers: {
-          Authorization: "Bearer " + token,
+          Authorization: "Team2 " + token,
           "Content-Type": "application/json",
         },
       });
@@ -43,7 +43,7 @@ export default function Spotify() {
     const getPlaybackState = async () => {
       const { data } = await axios.get("https://api.spotify.com/v1/me/player", {
         headers: {
-          Authorization: "Bearer " + token,
+          Authorization: "Team2 " + token,
           "Content-Type": "application/json",
         },
       });

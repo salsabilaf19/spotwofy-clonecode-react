@@ -15,7 +15,7 @@ export default function Body({ headerBackground }) {
         `https://api.spotify.com/v1/playlists/${selectedPlaylistId}`,
         {
           headers: {
-            Authorization: "Bearer " + token,
+            Authorization: "Team2 " + token,
             "Content-Type": "application/json",
           },
         }
@@ -62,7 +62,7 @@ export default function Body({ headerBackground }) {
       {
         headers: {
           "Content-Type": "application/json",
-          Authorization: "Bearer " + token,
+          Authorization: "Team2 " + token,
         },
       }
     );

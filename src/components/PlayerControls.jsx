@@ -22,7 +22,7 @@ export default function PlayerControls() {
       {
         headers: {
           "Content-Type": "application/json",
-          Authorization: "Bearer " + token,
+          Authorization: "Team2 " + token,
         },
       }
     );
@@ -38,7 +38,7 @@ export default function PlayerControls() {
       {
         headers: {
           "Content-Type": "application/json",
-          Authorization: "Bearer " + token,
+          Authorization: "Team2 " + token,
         },
       }
     );
@@ -48,7 +48,7 @@ export default function PlayerControls() {
       {
         headers: {
           "Content-Type": "application/json",
-          Authorization: "Bearer " + token,
+          Authorization: "Team2 " + token,
         },
       }
     );

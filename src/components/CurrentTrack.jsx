@@ -13,7 +13,7 @@ export default function CurrentTrack() {
         {
           headers: {
             "Content-Type": "application/json",
-            Authorization: "Bearer " + token,
+            Authorization: "Team2 " + token,
           },
         }
       );
