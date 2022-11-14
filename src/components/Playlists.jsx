@@ -13,7 +13,7 @@ export default function Playlists() {
         "https://api.spotify.com/v1/me/playlists",
         {
           headers: {
-            Authorization: "Team2  " + token,
+            Authorization: "Bearer  " + token,
             "Content-Type": "application/json",
           },
         }

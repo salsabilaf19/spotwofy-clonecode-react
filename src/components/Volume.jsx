@@ -16,7 +16,7 @@ export default function Volume() {
         },
         headers: {
           "Content-Type": "application/json",
-          Authorization: "Team2 " + token,
+          Authorization: "Bearer " + token,
         },
       }
     );
