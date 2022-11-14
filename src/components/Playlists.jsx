@@ -13,7 +13,7 @@ export default function Playlists() {
         "https://api.spotify.com/v1/me/playlists",
         {
           headers: {
-            Authorization: "Bearer " + token,
+            Authorization: "Bearer  " + token,
             "Content-Type": "application/json",
           },
         }
@@ -22,6 +22,7 @@ export default function Playlists() {
       const playlists = items.map(({ name, id }) => {
         return { name, id };
       });
+      console.log(playlists);
       dispatch({ type: reducerCases.SET_PLAYLISTS, playlists });
     };
     getPlaylistData();
