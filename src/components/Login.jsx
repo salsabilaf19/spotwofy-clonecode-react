@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export default function Login() {
   const handleClick = async () => {
-    const client_id = "a8a8fa8bf93a474a8ffbe27433963b84";
+    const client_id = "a8a8fa8bf93a474a8ffbe27433963b84";   // Pindah ke .env agar tidak masuk ke dalam folder sources inspect
     const redirect_uri = "http://localhost:3000/";
     const api_uri = "https://accounts.spotify.com/authorize";
     const scope = [
@@ -26,7 +26,7 @@ export default function Login() {
         src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Black.png"
         alt="spotify"
       />
-      <button onClick={handleClick}>Connect Spotify</button>
+      <button onClick={handleClick}>Connect SpoTwofy</button>
     </Container>
   );
 }
