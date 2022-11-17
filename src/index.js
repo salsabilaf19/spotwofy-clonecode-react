@@ -1,14 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App.jsx";
-import { StateProvider } from "./utils/StateProvider";
-import reducer, { initialState } from "./utils/Reducer";
-ReactDOM.render(
-  <React.StrictMode>
-    <StateProvider initialState={initialState} reducer={reducer}>
-      <App />
-    </StateProvider>
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+import App from "./components/App";
+import reducers from "./reducers";
+import {createStore} from "redux";
+import {Provider} from "react-redux";
+
+const rooty = () => {
+    return(
+        <Provider
+            store={createStore(
+                reducers,
+                window.__REDUX_DEVTOOLS_EXTENSION__ &&
+                    window.__REDUX_DEVTOOLS_EXTENSION__()
+            )}
+        >
+            <App />
+        </Provider>
+    );
+};
+
+ReactDOM.render(rooty(), document.getElementById("root"));
