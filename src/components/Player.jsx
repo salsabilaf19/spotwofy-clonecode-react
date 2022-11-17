@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { connect, useDispatch } from "react-redux";
 import { forwardsSvg, backwardsSvg, shuffleSvg } from "../svg";
 import { setPlayerState, selectSongById } from "../actions";
-import PlayControl from "./PlayControls";
+import PlayControl from "./PlayerControls";
 import SongTime from "./SongTime";
 
 const Player = ({
@@ -34,7 +34,7 @@ const Player = ({
     useEffect(() => {
         document.addEventListener("keydown", spaceDownFunc);
         document.addEventListener("keyup", spaceUpFunc);
-    }, []);
+    },[]);
 
     if (selectedSongId < 0 || selectedSongId > songs.length - 1) {
         selectSongById(0);
